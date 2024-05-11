@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 const Error = () => {
-	return <div>Error</div>;
+	const navigate = useNavigate();
+	return (
+		<h1>
+			Error
+			<button onClick={() => navigate("/")}>Home</button>
+		</h1>
+	);
 };
 export default Error;
