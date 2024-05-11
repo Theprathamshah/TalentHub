@@ -1,4 +1,17 @@
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <h1>Home</h1>,
+	},
+	{
+		path: "/about",
+		element: <h1>About</h1>,
+	},
+]);
+
 const App = () => {
-	return <h1>Jobify Application</h1>;
+	return <RouterProvider router={router}>Jobify Application</RouterProvider>;
 };
 export default App;
