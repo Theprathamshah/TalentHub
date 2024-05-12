@@ -4,7 +4,7 @@ const Login = () => {
 	return (
 		<div>
 			Login
-			<Link to={"/register"}>Don't have an account? register</Link>
+			<Link to={"/register"}>{`Don't have an account? register`}</Link>
 		</div>
 	);
 };
